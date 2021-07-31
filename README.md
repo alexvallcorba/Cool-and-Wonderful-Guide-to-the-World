@@ -76,7 +76,7 @@ https://i.imgur.com/hJi99DW.png
 
 -Create form for drop down menu (show page).
 
--create links for the four options (page 1) of the data response after getting first 
+-Create links for the four options (page 1) of the data response after getting first 
  response from search list and append data.
  
 -Remove data from previous search (show page).
