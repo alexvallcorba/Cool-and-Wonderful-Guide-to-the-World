@@ -76,21 +76,20 @@ https://i.imgur.com/hJi99DW.png
  
 #### PostMVP  
 
-- 
+-Make a new request (dif API?)to get more data and img of each individual object.
+-Append new data and img.
+-Style with CSS landing page.
+- Create link and pop up window for Google Maps location of the place.
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|August 2| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
-|August 3| Pseudocode / actual code | Incomplete
-|August 4| Initial Clickable Model  | Incomplete
-|August 5| MVP | Incomplete
+|July 30 | Prompt / Wireframes / Priority Matrix / Timeframes |Complete
+|August 2| Project Approval / Pseudo code. Create basicHTML (maybe some basic CSS after axios request).Start writing code (axios request, append data)| Incomplete
+|August 3| Create links for page1 and append the data. Remove previous search. Maybe start CSS style using flex box and Media Query| Incomplete
+|August 4| Advance CSS styling. This should be the end of MVP |Incomplete
+|August 5|Work on pmvp in this order: Second axios request, append data and image, style in CSS (landing page), google maps window.| Incomplete
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
