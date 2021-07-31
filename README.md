@@ -88,17 +88,17 @@ https://i.imgur.com/hJi99DW.png
 -Make a new request (dif API?)to get more data and img of each individual object.
 -Append new data and img.
 -Style with CSS landing page.
-- Create link and pop up window for Google Maps location of the place.
+-Create link and pop up window for Google Maps location of the place.
 
 ## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 30 | Prompt / Wireframes / Priority Matrix / Timeframes |Complete
-|August 2| Project Approval / Pseudo code. Create basicHTML (maybe some basic CSS after axios request).Start writing code (axios request, append data)| Incomplete
-|August 3| Create links for page1 and append the data. Remove previous search. Maybe start CSS style using flex box and Media Query| Incomplete
-|August 4| Advance CSS styling. This should be the end of MVP |Incomplete
-|August 5|Work on pmvp in this order: Second axios request, append data and image, style in CSS (landing page), google maps window.| Incomplete
+|August 2| Project Approval / Pseudo code / Create basicHTML (maybe some basic CSS after axios request) / Start writing code (axios request, append data)| Incomplete
+|August 3| Create links for page1 / Append the data / Remove previous search / Maybe start CSS style using flex box and Media Query| Incomplete
+|August 4| Advance CSS styling / This should be the end of MVP |Incomplete
+|August 5|Work on pmvp in this order: Second axios request /  Append data and image / Style in CSS (landing page) / Google Maps window and link for location.| Incomplete
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
