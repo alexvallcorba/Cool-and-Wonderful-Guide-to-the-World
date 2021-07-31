@@ -10,7 +10,7 @@ World wide digital traveling guide. Users can use it to plann trips or once in t
 
 ## API and Data Sample
 
-This API a CORSE issue. My Instructor helped me built on the back a local API. 
+This API had a CORSE issue. My Instructor helped me built on the back a local API. 
 This is the API : https://api.yelp.com/v3/businesses/search?location=barcelona&term=tapas
 This is the one he built for me: https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}
 ```
