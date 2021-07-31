@@ -61,20 +61,22 @@ https://i.imgur.com/hJi99DW.png
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+ 
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
-
+-Make data request.
+-Append data.
+-Write basic HTML,CSS.
+-Create form for drop down menu (show page).
+-create links for the four options (page 1) of the data response after getting first 
+ response from search list and append data.
+-Remove data from previous search (show page).
+-Style with CSS. Show page,pag1,pag2.
+ 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- 
 
 ## Project Schedule
 
@@ -93,7 +95,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-https://i.imgur.com/VaINPfK.png
+https://i.imgur.com/tQfGDDB.png
 
 ## Timeframes
 
