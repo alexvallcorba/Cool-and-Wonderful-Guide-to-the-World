@@ -1,0 +1,28 @@
+{
+  "name": "Cool-and-Wonderful-Guide-to-the-World",
+  "version": "1.0.0",
+  "description": "## Project Name",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexvallcorba/Cool-and-Wonderful-Guide-to-the-World.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexvallcorba/Cool-and-Wonderful-Guide-to-the-World/issues"
+  },
+  "homepage": "https://github.com/alexvallcorba/Cool-and-Wonderful-Guide-to-the-World#readme",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}
