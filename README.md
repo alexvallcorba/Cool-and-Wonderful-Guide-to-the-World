@@ -104,9 +104,18 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Look for API and make it work | H | 4hrs| 2hrs | 2hrs |
+| First data request and append data | H | 3hrs| hrs | hrs |
+| Write basic HTML, CSS | H | 3hrs | hrs | hrs |
+| Create form for drop down menu | H | 3hrs | hrs | hrs |
+| Create links or maybe new request for page2 | H | 4hrs | hrs | hrs |
+| Remove data from previous response | H | 2hrs | hrs | hrs |
+| create links in between pages | H | 3hrs | hrs | hrs |
+| Style with advance CSS all the pages | H | 15hrs | hrs | hrs |
+| Make new request for new data and img for landing page | H | 3hrs | hrs | hrs |
+| Appen data and image for landing page | H | 4hrs | hrs | hrs |
+| Create new pop up window with link to Google Maps for business or place location | H | 4hrs | hrs | hrs |
+| Total | H | 48hrs| 5hrs | 5hrs |
 
 ## Code Snippet
 
