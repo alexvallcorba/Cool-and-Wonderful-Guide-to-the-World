@@ -2,15 +2,57 @@
 
 ## Project Name
 
-The name of your project with deployed URL.
+Cool & Wonderful Guide 2 The World.
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Digital world guide traveling guide. For users to plann trips or once in the loication, users can search all types of fetueres like shops, museums, transpor stations, events, locations. Comes with a full description of the business or the palce and a google map location.
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+This API a CORSE issue. My Instructor helped me built on the back a local API. 
+This is the API : https://api.yelp.com/v3/businesses/search?location=barcelona&term=tapas
+This is the one he built for me: https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}
+```
+{
+            "id": "zrxsTCz5lt8q73Hx0GHLDw",
+            "alias": "cerveseria-catalana-barcelona",
+            "name": "Cerveseria Catalana",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/bHihfh0Dl7HQ-fj3G1ZqsQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/cerveseria-catalana-barcelona?adjust_creative=Ho5FFn72QbG2jZcHjWpgLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ho5FFn72QbG2jZcHjWpgLA",
+            "review_count": 1252,
+            "categories": [
+                {
+                    "alias": "spanish",
+                    "title": "Spanish"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 41.392393,
+                "longitude": 2.160993
+            },
+            "transactions": [],
+            "price": "€€",
+            "location": {
+                "address1": "Carrer de Mallorca, 236",
+                "address2": "",
+                "address3": null,
+                "city": "Barcelona",
+                "zip_code": "08008",
+                "country": "ES",
+                "state": "B",
+                "display_address": [
+                    "Carrer de Mallorca, 236",
+                    "08008 Barcelona",
+                    "Spain"
+                ]
+            },
+            "phone": "+34932160368",
+            "display_phone": "+34 932 16 03 68",
+            "distance": 267.7763219307933
+        }```
 
 ## Wireframes
 
