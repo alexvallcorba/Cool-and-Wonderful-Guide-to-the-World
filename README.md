@@ -86,8 +86,11 @@ https://i.imgur.com/hJi99DW.png
 #### PostMVP  
 
 -Make a new request (dif API?)to get more data and img of each individual object.
+
 -Append new data and img.
+
 -Style with CSS landing page.
+
 -Create link and pop up window for Google Maps location of the place.
 
 ## Project Schedule
