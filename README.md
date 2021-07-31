@@ -6,7 +6,7 @@ Cool & Wonderful Guide 2 The World.
 
 ## Project Description
 
-Digital world guide traveling guide. For users to plann trips or once in the loication, users can search all types of fetueres like shops, museums, transpor stations, events, locations. Comes with a full description of the business or the palce and a google map location.
+Digital world wide traveling guide. For users to plann trips or once in the loication, users can search all types of fetueres like shops, museums, transpor stations, events, locations. Comes with a full description of the business or the palce and a google map location.
 
 ## API and Data Sample
 
