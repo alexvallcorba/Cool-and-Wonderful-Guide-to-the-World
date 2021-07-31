@@ -52,7 +52,7 @@ This is the one he built for me: https://api.yelp.com/v3/businesses/search?term=
             "phone": "+34932160368",
             "display_phone": "+34 932 16 03 68",
             "distance": 267.7763219307933
-        }```
+        }
 
 ## Wireframes
 
