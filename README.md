@@ -68,29 +68,29 @@ http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}
 
 #### MVP 
 
--Make data request.
+- Make data request.
 
--GET data and Append the data.
+- GET data and Append the data.
 
--Write basic HTML,CSS.
+- Write basic HTML,CSS.
 
--Create form for input user (show page).
+- Create form for input user (show page).
  
--Remove data from previous search (show page).
+- Remove data from previous search (show page).
 
--Style with CSS. Show-page, pag1, page-landing.
+- Style with CSS. Show-page, pag1, page-landing.
  
 #### PostMVP  
 
--Make a new request (dif API?)to get more data and img of each individual object.
+- Make a new request (dif API?)to get more data and img of each individual object.
 
--Append new data and img.
+- Append new data and img.
 
--Style with advance CSS.
+- Style with advance CSS.
 
--create a subscription form and pop up window for  user's name and email.
+- create a subscription form and pop up window for  user's name and email.
 
--Create link and pop up window for Google Maps location of the place.
+- Create link and pop up window for Google Maps location of the place.
 
 ## Project Schedule
 
@@ -105,7 +105,7 @@ http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}
 
 ## Priority Matrix
 
-https://i.imgur.com/tQfGDDB.png
+![Priority Matrix](https://i.imgur.com/tQfGDDB.png)
 
 ## Timeframes
 
