@@ -70,18 +70,15 @@ https://i.imgur.com/hJi99DW.png
 
 -Make data request.
 
--Append data.
+-GET data and Append the data.
 
 -Write basic HTML,CSS.
 
--Create form for drop down menu (show page).
-
--Create links for the four options (page 1) of the data response after getting first 
- response from search list and append data.
+-Create form for input user (show page).
  
 -Remove data from previous search (show page).
 
--Style with CSS. Show page,pag1,pag2.
+-Style with CSS. Show-page, pag1, page-landing.
  
 #### PostMVP  
 
@@ -89,7 +86,9 @@ https://i.imgur.com/hJi99DW.png
 
 -Append new data and img.
 
--Style with CSS landing page.
+-Style with advance CSS.
+
+-create a subscription form and pop up window for  user's name and email.
 
 -Create link and pop up window for Google Maps location of the place.
 
@@ -99,9 +98,9 @@ https://i.imgur.com/hJi99DW.png
 |---|---| ---|
 |July 30 | Prompt / Wireframes / Priority Matrix / Timeframes |Complete
 |August 2| Project Approval / Pseudo code / Create basicHTML (maybe some basic CSS after axios request) / Start writing code (axios request, append data)| Incomplete
-|August 3| Create links for page1 / Append the data / Remove previous search / Maybe start CSS style using flex box and Media Query| Incomplete
+|August 3| Append the data / Remove previous search / Maybe start CSS style using flex box and Media Query| Incomplete
 |August 4| Advance CSS styling / This should be the end of MVP |Incomplete
-|August 5|Work on pmvp in this order: Second axios request /  Append data and image / Style in CSS (landing page) / Google Maps window and link for location.| Incomplete
+|August 5| Work on pmvp in this order: Second axios request /  Append data and image / Style in CSS (landing page) / subscription form an pop up window / Google Maps window and link for location.| Incomplete
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
@@ -115,10 +114,9 @@ https://i.imgur.com/tQfGDDB.png
 | Look for API and make it work | H | 4hrs| 2hrs | 2hrs |
 | First data request and append data | H | 3hrs| hrs | hrs |
 | Write basic HTML, CSS | H | 3hrs | hrs | hrs |
-| Create form for drop down menu | H | 3hrs | hrs | hrs |
-| Create links or maybe new request for page2 | H | 4hrs | hrs | hrs |
+| Create input user's form | H | 3hrs | hrs | hrs |
 | Remove data from previous response | H | 2hrs | hrs | hrs |
-| create links in between pages | H | 3hrs | hrs | hrs |
+| Create links in between pages | H | 3hrs | hrs | hrs |
 | Style with advance CSS all the pages | H | 15hrs | hrs | hrs |
 | Make new request for new data and img for landing page | H | 3hrs | hrs | hrs |
 | Appen data and image for landing page | H | 4hrs | hrs | hrs |
