@@ -44,3 +44,14 @@ form {
   justify-content: flex-start;
   margin: 0 auto;
  } 
+
+ .biz-data {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  
+ }

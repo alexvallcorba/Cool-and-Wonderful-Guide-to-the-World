@@ -15,16 +15,33 @@ form.addEventListener("submit", async (e) => {
 const getYelpRequest = async (term, location) => {
   let localHostURL = `http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}`;
   let response = await axios.get(localHostURL);
-  displayYelp(response.data.businesses);
+  console.log(response.data);
 };
+
+// getYelpRequest()
 
 function displayYelp(businesses) {
   console.log(businesses)
-  businesses.forEach((biz) => {
-    console.log(biz)
-  })
+  const display = `
+  <div class="biz-info">
+    <h1>${businesses.name}</h1>
+    <img src="${businesses.image_url}" alt="eyes"/>
+    <h3 class='address'>Location<?h3>
+    <p>${businesses.location.display_address}</p>
+    <h3 class='phone'>Phone</>
+    <p>${businesses.location.display_address}</p>
+
+  </div>
+  `
+  document.querySelector('.biz-info').insertAdjacentHTML('beforeend', display)
 }
 
+function removeCountry() {
+    const removeElement = document.querySelector('.biz-data')
+    while (removeElement.lastChild) {
+    removeElement.removeChild(removeElement.lastChild)
+  }
+}
 
 
 
