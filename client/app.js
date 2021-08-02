@@ -6,7 +6,8 @@ form.addEventListener("submit", async (e) => {
   let { term, location } = e.target;
   let termValue = term.value;
   let locationValue = location.value;
-  getYelpRequest(termValue, locationValue);
+  const yelpRequest = getYelpRequest(termValue, locationValue);
+  displayYelp(yelpRequest)
 });
 
 
@@ -21,19 +22,24 @@ const getYelpRequest = async (term, location) => {
 // getYelpRequest()
 
 function displayYelp(businesses) {
-  console.log(businesses)
+  businesses.forEach((business) => {
+    // console.log(business)
+    // console.log(businesses)
   const display = `
   <div class="biz-info">
     <h1>${businesses.name}</h1>
     <img src="${businesses.image_url}" alt="eyes"/>
     <h3 class='address'>Location<?h3>
-    <p>${businesses.location.display_address}</p>
+    <p>${businesses.location.display-address}</p>
     <h3 class='phone'>Phone</>
     <p>${businesses.location.display_address}</p>
 
   </div>
   `
   document.querySelector('.biz-info').insertAdjacentHTML('beforeend', display)
+    
+  })
+  return response
 }
 
 function removeCountry() {
