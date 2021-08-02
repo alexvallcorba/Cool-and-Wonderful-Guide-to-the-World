@@ -6,14 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src='./app.js'></script>
+  <script  src='./style.css'></script>
+
   <link rel="stylesheet" href="./style.css">
   <title>Document</title>
 </head>
 <body>
+  <header>
+    <img id='logo' src="https://i.imgur.com/gft8Xnu.png" alt="logo-cool">
+  </header>
   <form>
-    <input autoFocus placeholder='term' type='text' id="term" />
-    <input placeholder='location' type='text' id="location" />
-    <button type='submit'>Search Yelp API</button>
+    <input class='input1' type='text' autoFocus placeholder='term' type='text' id="term" />
+    <input  class='input1' type='text' id="location" placeholder="Location"/>
+    <section class="buton-size">
+      <button id='button-eyes' type='submit'>
+      <img src="https://i.imgur.com/rZrQr6s.png" alt="eyes">
+      </button>
+    </section>
   </form>
+  <div
+    class='first-List'>
+  </div>
 </body>
 </html>
