@@ -12,14 +12,18 @@ form.addEventListener("submit", async (e) => {
 
 //Get data with call to the API
 
-
 const getYelpRequest = async (term, location) => {
   let localHostURL = `http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}`;
   let response = await axios.get(localHostURL);
-  console.log(response.data);
+  displayYelp(response.data.businesses);
 };
 
-// getYelpRequest()
+function displayYelp(businesses) {
+  console.log(businesses)
+  businesses.forEach((biz) => {
+    console.log(biz)
+  })
+}
 
 
 
