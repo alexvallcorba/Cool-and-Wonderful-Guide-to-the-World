@@ -2,67 +2,126 @@
 
 ## Project Name
 
-The name of your project with deployed URL.
+Cool & Wonderful Guide 2 The World.
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+World wide digital traveling guide. Users can use it to plan trips or once in the location, can search all types of featuers like shops, museums,  transportation, events. Comes with a full description of the business or the palce and a google map location.
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+This API had a CORSE issue. My Instructor helped me built on the back a local API. 
+This is the API that has the CORSE issue.
+https://api.yelp.com/v3/businesses/search?location=barcelona&term=tapas
+
+This is the one my instructor built for me in the back end.
+http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}
+```
+{
+            "id": "zrxsTCz5lt8q73Hx0GHLDw",
+            "alias": "cerveseria-catalana-barcelona",
+            "name": "Cerveseria Catalana",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/bHihfh0Dl7HQ-fj3G1ZqsQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/cerveseria-catalana-barcelona?adjust_creative=Ho5FFn72QbG2jZcHjWpgLA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=Ho5FFn72QbG2jZcHjWpgLA",
+            "review_count": 1252,
+            "categories": [
+                {
+                    "alias": "spanish",
+                    "title": "Spanish"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": 41.392393,
+                "longitude": 2.160993
+            },
+            "transactions": [],
+            "price": "€€",
+            "location": {
+                "address1": "Carrer de Mallorca, 236",
+                "address2": "",
+                "address3": null,
+                "city": "Barcelona",
+                "zip_code": "08008",
+                "country": "ES",
+                "state": "B",
+                "display_address": [
+                    "Carrer de Mallorca, 236",
+                    "08008 Barcelona",
+                    "Spain"
+                ]
+            },
+            "phone": "+34932160368",
+            "display_phone": "+34 932 16 03 68",
+            "distance": 267.7763219307933
+        }
+```
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+![wireframe](https://i.imgur.com/7SthxGj.png)
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+ 
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Make data request.
 
+- GET data and Append the data.
+
+- Write basic HTML,CSS.
+
+- Create form for input user (show page).
+ 
+- Remove data from previous search (show page).
+
+- Style with CSS. Show-page, pag1, page-landing.
+ 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Make a new request (dif API?)to get more data and img of each individual object.
+
+- Append new data and img.
+
+- Style with advance CSS.
+
+- create a subscription form and pop up window for  user's name and email.
+
+- Create link and pop up window for Google Maps location of the place.
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 30| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|August 2| Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete
-|August 3| Pseudocode / actual code | Incomplete
-|August 4| Initial Clickable Model  | Incomplete
-|August 5| MVP | Incomplete
+|July 30 | Prompt / Wireframes / Priority Matrix / Timeframes |Complete
+|August 2| Project Approval / Pseudo code / Create basicHTML (maybe some basic CSS after axios request) / Start writing code (axios request, append data)| Incomplete
+|August 3| Append the data / Remove previous search / Maybe start CSS style using flex box and Media Query| Incomplete
+|August 4| Advance CSS styling / This should be the end of MVP |Incomplete
+|August 5| Work on pmvp in this order: Second axios request /  Append data and image / Style in CSS (landing page) / subscription form an pop up window / Google Maps window and link for location.| Incomplete
 |August 6| Presentations | Incomplete
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+![Priority Matrix](https://i.imgur.com/tQfGDDB.png)
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
-
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Look for API and make it work | H | 4hrs| 2hrs | 2hrs |
+| First data request and append data | H | 3hrs| hrs | hrs |
+| Write basic HTML, CSS | H | 3hrs | hrs | hrs |
+| Create input user's form | H | 3hrs | hrs | hrs |
+| Remove data from previous response | H | 2hrs | hrs | hrs |
+| Create links in between pages | H | 3hrs | hrs | hrs |
+| Style with advance CSS all the pages | H | 15hrs | hrs | hrs |
+| Make new request for new data and img for landing page | H | 3hrs | hrs | hrs |
+| Appen data and image for landing page | H | 4hrs | hrs | hrs |
+| Create new pop up window with link to Google Maps for business or place location | H | 4hrs | hrs | hrs |
+| Total | H | 48hrs| 5hrs | 5hrs |
 
 ## Code Snippet
 
