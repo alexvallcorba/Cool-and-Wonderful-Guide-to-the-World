@@ -60,7 +60,7 @@ http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}
 
 ## Wireframes
 
-https://i.imgur.com/hJi99DW.png
+https://i.imgur.com/7SthxGj.png
 
 ### MVP/PostMVP
 
