@@ -112,13 +112,23 @@ form {
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding-top: 120px;
   border: 20px solid rgb(255, 124, 53);
   border-radius: 50px;
   width:1500px;
   height: 1900px; 
   box-shadow: 20px 20px 40px rgb(152, 152, 255);
-}
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  color: rgb(112, 15, 15);
+  font-size: 80px;
+  }
+
+
+  .modalText {
+    
+
+  }
 
 /* The Close Button */
 .close {

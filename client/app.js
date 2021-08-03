@@ -31,29 +31,33 @@ function displayYelp(businesses) {
     <div class='display-box' style='height:600px; width:500px;'>
     <h1 class='city'>${business.location.city}</h1>
     <h1 class='business-name'>${business.name}</h1>
-    
     </div>
    `;
     // if (displayYelp === null) {
     //   alert("No information available.")
     // }
-
     bizDiv.insertAdjacentHTML("beforeend", display);
     bizDiv.addEventListener("click", () => {
       document.querySelector(
         ".modalText"
       ).innerHTML = `
         <h1>${business.name}</h1>
+        <h3>${business.categories[0].title}</h3>
+
+
         <h2>${business.price}</h2>
+
         <p>${business.location.display_address[0]}</p>
         <p>${business.location.display_address[1]}</p>
         <p>${business.location.display_address[2]}</p>
-        
-        <h3 class='phone'>Phone</>
+        <h6>Phone</>
         <p>${business.phone}</p>
-      `;
-
-      document.querySelector(".modal").style.display = "block";
+        <p>
+        ${business.coordinates.latitude}
+        ${business.coordinates.longitude}
+        </p>
+        `
+        document.querySelector(".modal").style.display = "block";
     });
 
     window.onclick = function (event) {
