@@ -7,47 +7,44 @@ form.addEventListener("submit", async (e) => {
   let termValue = term.value;
   let locationValue = location.value;
   const yelpRequest = getYelpRequest(termValue, locationValue);
-  displayYelp(yelpRequest)
+  // displayYelp(yelpRequest)
 });
 
 
-//Get data with call to the API
 
 const getYelpRequest = async (term, location) => {
   let localHostURL = `http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}`;
   let response = await axios.get(localHostURL);
-  console.log(response.data);
+  console.log(response.data.businesses);
+  displayYelp(response.data.businesses)
+
 };
 
-// getYelpRequest()
 
 function displayYelp(businesses) {
   businesses.forEach((business) => {
     // console.log(business)
     // console.log(businesses)
+  let bizDiv = document.createElement('div')
+   bizDiv.style.backgroundImage = `url(${business.image_url})`
+   document.querySelector('.biz-data').append(bizDiv)
   const display = `
-  <div class="biz-info">
-    <h1>${businesses.name}</h1>
-    <img src="${businesses.image_url}" alt="eyes"/>
+    <h1>${business.name}</h1>
     <h3 class='address'>Location<?h3>
-    <p>${businesses.location.display-address}</p>
+    <p>${business.location.display_address[0]}
+       ${business.location.display_address[1]}
+       ${business.location.display_address[2]}
+    </p>
     <h3 class='phone'>Phone</>
-    <p>${businesses.location.display_address}</p>
-
-  </div>
+    <p>${business.location.phone}</p>
   `
-  document.querySelector('.biz-info').insertAdjacentHTML('beforeend', display)
+  bizDiv.insertAdjacentHTML('beforeend', display)
     
   })
-  return response
 }
 
-function removeCountry() {
-    const removeElement = document.querySelector('.biz-data')
-    while (removeElement.lastChild) {
-    removeElement.removeChild(removeElement.lastChild)
-  }
-}
+
+
 
 
 

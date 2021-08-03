@@ -24,6 +24,10 @@ width: 1500px;
   text-align: center;
 
 }
+#button-eyes img {
+  height: 190px;
+  width: auto;
+}
 
 .input1 {
   width: 800px; 
@@ -44,6 +48,10 @@ form {
   margin-left: auto;
   margin-bottom: 20px;
   position: static;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 
  } 
 
@@ -51,9 +59,15 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
 
+}
+bizDiv {
+  opacity: unset;
+}
+
+
+
   
- }
