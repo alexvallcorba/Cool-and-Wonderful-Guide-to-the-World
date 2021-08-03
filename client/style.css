@@ -55,6 +55,16 @@ form {
 
  } 
 
+.input1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+ bizDiv {
+   width: 500px;
+ }
+
  .biz-data {
   display: flex;
   flex-direction: row;
@@ -64,10 +74,22 @@ form {
   align-content: center;
 
 }
-bizDiv {
-  opacity: unset;
+
+
+
+
+
+@media screen and (min-device-width: 480px) {
+  .biz-data {
+    width: fit-content;
+  }
 }
 
+@media screen and (max-device-width: 800px){
+  .biz-data {
+    width: fit-content;
 
+  }
+}
 
   

@@ -7,17 +7,16 @@ form.addEventListener("submit", async (e) => {
   let termValue = term.value;
   let locationValue = location.value;
   const yelpRequest = getYelpRequest(termValue, locationValue);
-  // displayYelp(yelpRequest)
 });
 
 
 
 const getYelpRequest = async (term, location) => {
+  removeBusinesses()
   let localHostURL = `http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}`;
   let response = await axios.get(localHostURL);
   console.log(response.data.businesses);
   displayYelp(response.data.businesses)
-
 };
 
 
@@ -36,12 +35,20 @@ function displayYelp(businesses) {
        ${business.location.display_address[2]}
     </p>
     <h3 class='phone'>Phone</>
-    <p>${business.location.phone}</p>
+    <p>${business.phone}</p>
   `
   bizDiv.insertAdjacentHTML('beforeend', display)
     
   })
 }
+
+function removeBusinesses() {
+   const removeElement = document.querySelector('.biz-data')
+   while (removeElement.lastChild) {
+   removeElement.removeChild(removeElement.lastChild)
+   }
+ }
+ 
 
 
 
