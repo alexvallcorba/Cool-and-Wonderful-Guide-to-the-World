@@ -24,10 +24,12 @@ function displayYelp(businesses) {
   businesses.forEach((business) => {
     // console.log(business)
     // console.log(businesses)
+  
   let bizDiv = document.createElement('div')
    bizDiv.style.backgroundImage = `url(${business.image_url})`
    document.querySelector('.biz-data').append(bizDiv)
-  const display = `
+    const display = `
+    <div class='display-box'>
     <h1>${business.name}</h1>
     <h3 class='address'>Location<?h3>
     <p>${business.location.display_address[0]}
@@ -36,9 +38,27 @@ function displayYelp(businesses) {
     </p>
     <h3 class='phone'>Phone</>
     <p>${business.phone}</p>
+    </div>
   `
-  bizDiv.insertAdjacentHTML('beforeend', display)
+    bizDiv.insertAdjacentHTML('beforeend', display)
+
+    bizDiv.addEventListener('click', () => {
+      document.querySelector('.modalText').innerText = `${business.coordinates} ${business.price} `
+      document.querySelector('.modal').style.display = 'block';
+
+    })
+    window.onclick = function(event) {
+      if (event.target == document.querySelector('.modal')) {
+        document.querySelector('.modal').style.display = "none";
+      }
+      
+    }
+    let span = document.querySelector('.close')
+    let modal = document.querySelector('.modal')
+    span.onclick = function () {
     
+      modal.style.display = "none";
+    }
   })
 }
 
