@@ -75,10 +75,14 @@ form {
 
 }
 
-/* .display-box {
-  border;
-
-} */
+.display-box {
+  border: 10px solid rgb(138, 2, 2);
+  /* border-radius: 50px; */
+  height:300px;
+  width: 200px;
+  text-align: center;
+  text
+}
 
 /* The Modal (background) */
 .modal {
@@ -99,9 +103,11 @@ form {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 10px solid rgb(63, 63, 63);
+  border-radius: 100px;
   width:1200px;
   height: 1600px; /* Could be more or less, depending on screen size */
+  
 }
 
 /* The Close Button */
