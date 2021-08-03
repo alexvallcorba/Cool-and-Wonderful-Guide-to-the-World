@@ -43,7 +43,7 @@ width: 1500px;
 form {
   text-align: center;
   padding: 40px;
-  margin-top: auto;
+  margin-top: 200px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
@@ -72,6 +72,8 @@ form {
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 200px;
+
 
 }
 
@@ -103,10 +105,13 @@ form {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 10px solid rgb(63, 63, 63);
-  border-radius: 100px;
-  width:1200px;
-  height: 1600px; /* Could be more or less, depending on screen size */
+  border: 20px solid rgb(255, 124, 53);
+  border-radius: 50px;
+  width:1500px;
+  height: 1900px; /* Could be more or less, depending on screen size */
+  box-shadow: 20px 20px 40px rgb(152, 152, 255);
+
+
   
 }
 
@@ -125,6 +130,15 @@ form {
   cursor: pointer;
 }
 
+footer {
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 50px;
+  color: blue;
+  margin-top: 250px;
+  margin-bottom: 100px;
+}
+
 
 
 
@@ -135,7 +149,7 @@ form {
   }
 }
 
-@media screen and (max-device-width: 800px){
+@media screen and (max-device-width: 1000px){
   .biz-data {
     width: fit-content;
 
