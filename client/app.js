@@ -46,8 +46,8 @@ function displayYelp(businesses) {
 
     bizDiv.insertAdjacentHTML("beforeend", display);
     bizDiv.addEventListener("click", () => {
-      let modalContent = document.querySelector(".modal-content");
-      modalContent.style.backgroundImage = `url(${business.image_url})`;
+      // let modalContent = document.querySelector(".modal-content");
+      // modalContent.style.backgroundImage = `url(${business.image_url})`;
 
       document.querySelector(".modal-text").innerHTML = `
           <h1 class="restaurant-name">${business.name}</h1>
