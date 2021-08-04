@@ -66,19 +66,6 @@ function displayYelp(businesses) {
            <p>${business.phone}</p>
            <img class="logo-4modal" src="https://i.imgur.com/6mH212q.png"/>
            `;
-      document.getElementById("myForm").innerHTML = `
-           <form action="/action_page.php" class="form-container">
-           <h1>Login</h1>
-       
-           <label for="email">Email</label>
-           <input type="text" placeholder="Enter Email" name="email">
-       
-           <label for="psw"><b>Your</b></label>
-           <input type="password" placeholder="Enter Password" name="psw">
-       
-           <button type="submit" class="btn">submit</button>
-           </form>
-        `;
 
       createMap(
         `${business.coordinates.latitude}`,
@@ -102,6 +89,22 @@ function displayYelp(businesses) {
       modal.style.display = "none";
     };
   });
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  document.getElementById("myForm").innerHTML = `
+           <form action="/action_page.php" class="form-container">
+           <h1>Login</h1>
+       
+           <label for="email">Email</label>
+           <input type="text" placeholder="Enter Email" name="email">
+       
+           <label for="psw"><b>Your</b></label>
+           <input type="password" placeholder="Enter Password" name="psw">
+       
+           <button type="submit" class="btn">submit</button>
+           </form>
+        `;
 }
 
 function createMap(lat, long) {
