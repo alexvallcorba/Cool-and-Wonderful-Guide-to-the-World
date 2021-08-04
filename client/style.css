@@ -110,25 +110,26 @@ form {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #ffffff;
   margin: 15% auto; /* 15% from the top and centered */
-  padding-top: 120px;
+  /* padding-top: 120px; */
   border: 20px solid rgb(255, 124, 53);
   border-radius: 50px;
   width:1500px;
   height: 1900px; 
-  box-shadow: 20px 20px 40px rgb(152, 152, 255);
+  box-shadow: 20px 20px 40px rgb(255, 255, 255);
   text-align: center;
   font-family: 'Poiret One', cursive;
-  color: rgb(112, 15, 15);
+  color: rgb(252, 252, 252);
   font-size: 80px;
+  background-size: cover;
+  
+  
   }
 
-
-  .modalText {
-    
-
-  }
+#logo1 {
+  height:20px;
+}
 
 /* The Close Button */
 .close {
