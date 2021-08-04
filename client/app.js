@@ -5,9 +5,9 @@ form.addEventListener("submit", async (e) => {
   console.log(e.target);
   let { term, location } = e.target;
   let termValue = term.value;
-  console.log(termValue)
+  console.log(termValue);
   let locationValue = location.value;
-  console.log(locationValue)
+  console.log(locationValue);
   getYelpRequest(termValue, locationValue);
 });
 
@@ -15,13 +15,13 @@ const getYelpRequest = async (term, location) => {
   removeBusinesses();
   let localHostURL = `http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}`;
   let response = await axios.get(localHostURL);
-  console.log(response)
+  console.log(response);
   console.log(response.data.businesses);
   if (!response) {
-    alert("No information available.")
+    alert("No information available.");
   } else {
-    displayYelp(response.data.businesses)
-  };
+    displayYelp(response.data.businesses);
+  }
 };
 
 function displayYelp(businesses) {
@@ -29,32 +29,28 @@ function displayYelp(businesses) {
   //   alert("No information available.")
   // } else {
 
-    businesses.forEach((business) => {
-      // console.log(business)
-      // console.log(businesses)
-      let bizDiv = document.createElement("div");
-      bizDiv.classList = 'bizDiv-container'
-      bizDiv.style.backgroundImage = `url(${business.image_url})`;
-      document.querySelector(".biz-data").append(bizDiv);
-      console.log(business.image_url)
-      const display = `
+  businesses.forEach((business) => {
+    // console.log(business)
+    // console.log(businesses)
+    let bizDiv = document.createElement("div");
+    bizDiv.classList = "bizDiv-container";
+    bizDiv.style.backgroundImage = `url(${business.image_url})`;
+    document.querySelector(".biz-data").append(bizDiv);
+    console.log(business.image_url);
+    const display = `
       <div class='display-box' style='height:600px; width:500px;'>
-      <h1 class='city'>${business.location.city}</h1>
-      <h1 class='business-name'>${business.name}</h1>
+      <h1 id="background-text" class='city'>${business.location.city}</h1>
+      <h1 id="background-text" class='business-name'>${business.name}</h1>
       </div>
      `;
-      
-      
-  
-      bizDiv.insertAdjacentHTML("beforeend", display);
-      bizDiv.addEventListener("click", () => {
-        let modalContent = document.querySelector('.modal-content')
-        modalContent.style.backgroundImage = `url(${business.image_url})`;
-  
-        document.querySelector(
-          ".modalText"
-        ).innerHTML = `
-          <h1>${business.name}</h1>
+
+    bizDiv.insertAdjacentHTML("beforeend", display);
+    bizDiv.addEventListener("click", () => {
+      let modalContent = document.querySelector(".modal-content");
+      modalContent.style.backgroundImage = `url(${business.image_url})`;
+
+      document.querySelector(".modal-text").innerHTML = `
+          <h1 class="restaurant-name">${business.name}</h1>
           <h3>${business.categories[0].title}</h3>
           <h2>${business.price}</h2>
           <p>${business.location.display_address[0]}</p>
@@ -66,23 +62,21 @@ function displayYelp(businesses) {
           ${business.coordinates.latitude}
           ${business.coordinates.longitude}
           </p>
-          <
-          `
-          document.querySelector(".modal").style.display = "block";
-      });
-  
-      window.onclick = function (event) {
-        if (event.target == document.querySelector(".modal")) {
-          document.querySelector(".modal").style.display = "none";
-        }
-      };
-      let span = document.querySelector(".close");
-      let modal = document.querySelector(".modal");
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
+          `;
+      document.querySelector(".modal").style.display = "block";
     });
-  
+
+    window.onclick = function (event) {
+      if (event.target == document.querySelector(".modal")) {
+        document.querySelector(".modal").style.display = "none";
+      }
+    };
+    let span = document.querySelector(".close");
+    let modal = document.querySelector(".modal");
+    span.onclick = function () {
+    modal.style.display = "none";
+    };
+  });
 }
 
 function removeBusinesses() {
