@@ -49,7 +49,13 @@ function displayYelp(businesses) {
      bizDiv.addEventListener("click", () => {
        // let modalContent = document.querySelector(".modal-content");
        // modalContent.style.backgroundImage = `url(${business.image_url})`;
- 
+       function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
        document.querySelector(".modal-text").innerHTML = `
            <h1 class="restaurant-name">${business.name}</h1>
            <h3>${business.categories[0].title}</h3>
@@ -60,8 +66,21 @@ function displayYelp(businesses) {
            <h6>Phone</>
            <p>${business.phone}</p>
            <img class="logo-4modal" src="https://i.imgur.com/6mH212q.png"/>
+           <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
            `;
-         // createMap(`${business.coordinates.latitude}`, `${business.coordinates.longitude}`)
+        
+         createMap(`${business.coordinates.latitude}`, `${business.coordinates.longitude}`)
          console.log(`${business.coordinates.latitude}`, `${business.coordinates.longitude}`)
          document.querySelector(".modal").style.display = "block";
      });
@@ -80,16 +99,16 @@ function displayYelp(businesses) {
  }
  
  
- // function createMap(long, lat) {
- //   mapboxgl.accessToken = 'pk.eyJ1IjoiYWxleHZhbGxjb3JiYSIsImEiOiJja3J4dGJ3NDcwdGtjMnBuMWp6Yjh5ZWpsIn0.tlnaGCoqSvhJbp93TvlPaQ';
- //             let map = new mapboxgl.Map({
- //             container: 'map',
- //             style: 'mapbox://styles/mapbox/streets-v11',
- //             center: [long, lat],
- //             zoom: 8
- //             });
+ function createMap(lat, long) {
+   mapboxgl.accessToken = 'pk.eyJ1IjoiYWxleHZhbGxjb3JiYSIsImEiOiJja3J4dGJ3NDcwdGtjMnBuMWp6Yjh5ZWpsIn0.tlnaGCoqSvhJbp93TvlPaQ';
+  let map = new mapboxgl.Map({
+   container: 'map',
+   style: 'mapbox://styles/mapbox/streets-v11',
+   center: [long, lat],
+   zoom: 8
+             });
            
- // }
+ }
  function removeBusinesses() {
    const removeElement = document.querySelector(".biz-data");
    while (removeElement.lastChild) {
