@@ -62,7 +62,8 @@ function displayYelp(businesses) {
           ${business.coordinates.latitude}
           ${business.coordinates.longitude}
           </p>
-          `;
+          <img class="logo-4modal" src="https://i.imgur.com/6mH212q.png"/>
+        `;
       document.querySelector(".modal").style.display = "block";
     });
 
@@ -74,7 +75,7 @@ function displayYelp(businesses) {
     let span = document.querySelector(".close");
     let modal = document.querySelector(".modal");
     span.onclick = function () {
-    modal.style.display = "none";
+      modal.style.display = "none";
     };
   });
 }

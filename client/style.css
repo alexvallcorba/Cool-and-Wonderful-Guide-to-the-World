@@ -141,8 +141,12 @@ form {
   font-size: 80px;
   background-size: cover;
   background-image: linear-gradient(rgb(78, 76, 205), rgb(76, 194, 249));;
-
 }
+.logo-4modal {
+  width: 350px;
+}
+
+
 .close:hover,
 .close:focus {
   color: black;
