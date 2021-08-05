@@ -37,7 +37,6 @@ function displayYelp(businesses) {
       <h1 id="background-text" class='business-name'>${business.name}</h1>
 	    </div>
       `;
-
     bizDiv.insertAdjacentHTML("beforeend", display);
     bizDiv.addEventListener("click", () => {
       function openForm() {
@@ -91,17 +90,6 @@ function displayYelp(businesses) {
       modal.style.display = "none";
     };
   });
-
-  // function createMap(lat, long) {
-  //   mapboxgl.accessToken =
-  //     "pk.eyJ1IjoiYWxleHZhbGxjb3JiYSIsImEiOiJja3J4dGJ3NDcwdGtjMnBuMWp6Yjh5ZWpsIn0.tlnaGCoqSvhJbp93TvlPaQ";
-  //   let map = new mapboxgl.Map({
-  //     container: "map",
-  //     style: "mapbox://styles/mapbox/streets-v11",
-  //     center: [long, lat],
-  //     zoom: 8,
-  //   });
-  // }
 }
 
 function removeBusinesses() {
@@ -110,32 +98,3 @@ function removeBusinesses() {
     removeElement.removeChild(removeElement.lastChild);
   }
 }
-
-function openTheForm() {
-  document.getElementById("popupForm").style.display = "block";
-}
-
-function closeTheForm() {
-  document.getElementById("popupForm").style.display = "none";
-}
-
-document.querySelector(".form-popup").innerHTML = `
-   <h4 class="Contact-Info">Contact Info</h1>
-   <input class="input3" type="text" id="Name" placeholder="First Name & Last Name"/>
-   <input class="input4" type="text" id="Name" placeholder="Email address"/>
-   <button class="openBtn" type="submit">
-    <img class="envelop" src="https://i.imgur.com/QAb14gU.png" alt="envelop" />
-   </button>
-`;
-
-document.querySelector(".form-popup");
-window.onclick = function (event) {
-  if (event.target == document.querySelector(".form-popup")) {
-    document.querySelector(".form-popup").style.display = "none";
-  }
-};
-let span = document.querySelector(".close");
-let modal = document.querySelector(".form-popup");
-span.onclick = function () {
-  modal.style.display = "none";
-};
