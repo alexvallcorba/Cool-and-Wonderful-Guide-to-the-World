@@ -10,12 +10,9 @@ World wide digital traveling guide. Users can use it to plan trips or once in th
 
 ## API and Data Sample
 
-This API had a CORSE issue. My Instructor helped me built on the back a local API. 
-This is the API that has the CORSE issue.
 https://api.yelp.com/v3/businesses/search?location=barcelona&term=tapas
 
-This is the one my instructor built for me in the back end.
-http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}
+
 ```
 {
             "id": "zrxsTCz5lt8q73Hx0GHLDw",
@@ -155,4 +152,6 @@ function openForm() {
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+YELP API had a CORSE issue. My Instructor helped me built on the back a local API. 
+This is the one my instructor built for me in the back end.
+http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}
