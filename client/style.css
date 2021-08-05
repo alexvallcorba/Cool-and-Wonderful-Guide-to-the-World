@@ -62,6 +62,43 @@ form {
   margin-bottom: 0px;
 }
 
+.contact {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+  font-family: "Poiret One", cursive;
+  font-size: 25px;
+  background-color: skyblue;
+  border-radius: 15px;
+  color: #ffffff;
+  width: 155px;
+  height: 35px;
+  padding-top: 5px;
+}
+
+h3 {
+  font-family: "Poiret One", cursive;
+  font-size: 25px;
+  color: #ffffff;
+  padding-top: 5px;
+}
+
+
+
+#button-envelop {
+  background: none;
+  border: none;
+  text-align: center;
+}
+#button-envelop :hover {
+  transform: scale(1.5);
+}
+
+#button-envelop img {
+  height: 75px;
+  width: auto;
+}
 .biz-data {
   display: flex;
   flex-direction: row;
@@ -131,6 +168,12 @@ form {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+#map {
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
 }
 
 #rerstaurant-title {
