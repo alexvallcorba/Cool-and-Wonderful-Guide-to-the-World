@@ -25,35 +25,31 @@ const getYelpRequest = async (term, location) => {
 };
 
 function displayYelp(businesses) {
-  // if (!businesses) {
-  //   alert("No information available.")
-  // } else {
 
-  businesses.forEach((business) => {
-    let bizDiv = document.createElement("div");
-    bizDiv.classList = "bizDiv-container";
-    bizDiv.style.backgroundImage = `url(${business.image_url})`;
-    document.querySelector(".biz-data").append(bizDiv);
-    console.log(business.image_url);
-    const display = `
+    businesses.forEach((business) => {
+      let bizDiv = document.createElement("div");
+      bizDiv.classList = "bizDiv-container";
+      bizDiv.style.backgroundImage = `url(${business.image_url})`;
+      document.querySelector(".biz-data").append(bizDiv);
+      console.log(business.image_url);
+      const display = `
       <div class='display-box'>
       <h1 id="background-text" class='city'>${business.location.city}</h1>
       <h1 id="background-text" class='business-name'>${business.name}</h1>
 	    </div>
       `;
 
-    bizDiv.insertAdjacentHTML("beforeend", display);
-    bizDiv.addEventListener("click", () => {
-      // let modalContent = document.querySelector(".modal-content");
-      // modalContent.style.backgroundImage = `url(${business.image_url})`;
-      function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
+      bizDiv.insertAdjacentHTML("beforeend", display);
+      bizDiv.addEventListener("click", () => {
+        
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
 
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-      document.querySelector(".modal-text").innerHTML = `
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        document.querySelector(".modal-text").innerHTML = `
            <h1 class="restaurant-name">${business.name}</h1>
            <h3>${business.categories[0].title}</h3>
            <h2>${business.price}</h2>
@@ -65,29 +61,30 @@ function displayYelp(businesses) {
            <img class="logo-4modal" src="https://i.imgur.com/6mH212q.png"/>
            `;
 
-      document.querySelector(".modal").style.display = "block";
+        document.querySelector(".modal").style.display = "block";
+       
+      });
+
+      window.onclick = function (event) {
+        if (event.target == document.querySelector(".modal")) {
+          document.querySelector(".modal").style.display = "none";
+        }
+      };
+      let span = document.querySelector(".close");
+      let modal = document.querySelector(".modal");
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
     });
 
-    window.onclick = function (event) {
-      if (event.target == document.querySelector(".modal")) {
-        document.querySelector(".modal").style.display = "none";
-      }
-    };
-    let span = document.querySelector(".close");
-    let modal = document.querySelector(".modal");
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
-  });
+    function openForm() {
+      document.getElementById(".form-popup").style.display = "block";
+    }
 
-  function openForm() {
-    document.getElementById(".form-popup").style.display = "block";
-  }
-
-  function closeForm() {
-    document.getElementById(".form-popup").style.display = "none";
-  }
-  document.getElementById(".form-popup").innerHTML = `
+    function closeForm() {
+      document.getElementById(".form-popup").style.display = "none";
+    }
+    document.getElementById(".form-popup").innerHTML = `
   <h2>Popup Form</h2>
   <p>Click on the "Open Form" button to open the popup form.</p>
   <div class="openBtn">
@@ -110,16 +107,17 @@ function displayYelp(businesses) {
       </form>
         `;
 
-  function createMap(lat, long) {
-    mapboxgl.accessToken =
-      "pk.eyJ1IjoiYWxleHZhbGxjb3JiYSIsImEiOiJja3J4dGJ3NDcwdGtjMnBuMWp6Yjh5ZWpsIn0.tlnaGCoqSvhJbp93TvlPaQ";
-    let map = new mapboxgl.Map({
-      container: "map",
-      style: "mapbox://styles/mapbox/streets-v11",
-      center: [long, lat],
-      zoom: 8,
-    });
-  }
+    function createMap(lat, long) {
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiYWxleHZhbGxjb3JiYSIsImEiOiJja3J4dGJ3NDcwdGtjMnBuMWp6Yjh5ZWpsIn0.tlnaGCoqSvhJbp93TvlPaQ";
+      let map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [long, lat],
+        zoom: 8,
+      });
+    }
+  
 }
 
 function removeBusinesses() {
