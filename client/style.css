@@ -29,7 +29,7 @@ header {
 }
 
 #button-eyes img {
-  height: 75px;
+  height: 65px;
   width: auto;
 }
 
@@ -84,21 +84,6 @@ h3 {
   padding-top: 5px;
 }
 
-
-
-#button-envelop {
-  background: none;
-  border: none;
-  text-align: center;
-}
-#button-envelop :hover {
-  transform: scale(1.5);
-}
-
-#button-envelop img {
-  height: 75px;
-  width: auto;
-}
 .biz-data {
   display: flex;
   flex-direction: row;
@@ -186,7 +171,7 @@ h3 {
   border: 2.5px solid rgb(5, 5, 5);
   border-radius: 15px;
   width: 375px;
-  height: 590px;
+  height: 825px;
   box-shadow: 10px 10px 80px rgb(255 255 255);
   text-align: center;
   font-family: "Poiret One", cursive;
@@ -195,8 +180,16 @@ h3 {
   background-size: cover;
   background-image: linear-gradient(rgb(78, 76, 205), rgb(76, 194, 249));
 }
+
+#map {
+  border: 2.5px solid rgb(58, 0, 205);
+  border-radius: 15px;
+  background-color: rgb(58, 0, 205);
+
+}
+
 .logo-4modal {
-  width: 120px;
+  width: 80px;
 }
 
 .close:hover,
@@ -226,12 +219,30 @@ h3 {
   margin: 20px auto;
 }
 
+.openBtn {
+  background: none;
+  border: none;
+  text-align: center;
+}
+.openBtn :hover {
+  transform: scale(1.5);
+}
+
+.openBtn img {
+  height: 75px;
+  width: auto;
+}
+
+.form-popup {
+
+margin: 0 auto;}
+
 footer {
   text-align: center;
   font-family: "Poiret One", cursive;
-  font-size: 25px;
+  font-size: 20px;
   color: blue;
-  margin-top: 30px;
+  margin-top: 65px;
   margin-bottom: 100px;
 }
 
