@@ -30,15 +30,13 @@ function displayYelp(businesses) {
   // } else {
 
   businesses.forEach((business) => {
-    // console.log(business)
-    // console.log(businesses)
     let bizDiv = document.createElement("div");
     bizDiv.classList = "bizDiv-container";
     bizDiv.style.backgroundImage = `url(${business.image_url})`;
     document.querySelector(".biz-data").append(bizDiv);
     console.log(business.image_url);
     const display = `
-      <div class='display-box' style='height:600px; width:500px;'>
+      <div class='display-box'>
       <h1 id="background-text" class='city'>${business.location.city}</h1>
       <h1 id="background-text" class='business-name'>${business.name}</h1>
 	    </div>
@@ -89,34 +87,49 @@ function displayYelp(businesses) {
       modal.style.display = "none";
     };
   });
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+
+  function openForm() {
+    document.getElementById(".form-popup").style.display = "block";
   }
-  document.getElementById("myForm").innerHTML = `
-           <form action="/action_page.php" class="form-container">
-           <h1>Login</h1>
-       
-           <label for="email">Email</label>
-           <input type="text" placeholder="Enter Email" name="email">
-       
-           <label for="psw"><b>Your</b></label>
-           <input type="password" placeholder="Enter Password" name="psw">
-       
-           <button type="submit" class="btn">submit</button>
-           </form>
+
+  function closeForm() {
+    document.getElementById(".form-popup").style.display = "none";
+  }
+  document.getElementById(".form-popup").innerHTML = `
+  <h2>Popup Form</h2>
+  <p>Click on the "Open Form" button to open the popup form.</p>
+  <div class="openBtn">
+    <button class="openButton" onclick="openForm()"><strong>Open Form</strong></button>
+  </div>
+  <div class="loginPopup">
+    <div class="formPopup" id="popupForm">
+      <form action="/action_page.php" class="formContainer">
+        <h2>Please Log in</h2>
+        <label for="email">
+          <strong>E-mail</strong>
+        </label>
+        <input type="text" id="email" placeholder="Your Email" name="email" required>
+        <label for="psw">
+          <strong>Password</strong>
+        </label>
+        <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+        <button type="submit" class="btn">Log in</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
         `;
+
+  function createMap(lat, long) {
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoiYWxleHZhbGxjb3JiYSIsImEiOiJja3J4dGJ3NDcwdGtjMnBuMWp6Yjh5ZWpsIn0.tlnaGCoqSvhJbp93TvlPaQ";
+    let map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/mapbox/streets-v11",
+      center: [long, lat],
+      zoom: 8,
+    });
+  }
 }
 
-function createMap(lat, long) {
-  mapboxgl.accessToken =
-    "pk.eyJ1IjoiYWxleHZhbGxjb3JiYSIsImEiOiJja3J4dGJ3NDcwdGtjMnBuMWp6Yjh5ZWpsIn0.tlnaGCoqSvhJbp93TvlPaQ";
-  let map = new mapboxgl.Map({
-    container: "map",
-    style: "mapbox://styles/mapbox/streets-v11",
-    center: [long, lat],
-    zoom: 8,
-  });
-}
 function removeBusinesses() {
   const removeElement = document.querySelector(".biz-data");
   while (removeElement.lastChild) {
