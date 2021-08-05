@@ -97,9 +97,9 @@ http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}
 |  Day | Deliverable | Status
 |---|---| ---|
 |July 30 | Prompt / Wireframes / Priority Matrix / Timeframes |Complete
-|August 2| Project Approval / Pseudo code / Create basicHTML (maybe some basic CSS after axios request) / Start writing code (axios request, append data)| Incomplete
-|August 3| Append the data / Remove previous search / Maybe start CSS style using flex box and Media Query| Incomplete
-|August 4| Advance CSS styling / This should be the end of MVP |Incomplete
+|August 2| Project Approval / Pseudo code / Create basicHTML (maybe some basic CSS after axios request) / Start writing code (axios request, append data)| Complete
+|August 3| Append the data / Remove previous search / Maybe start CSS style using flex box and Media Query| Complete
+|August 4| Advance CSS styling / This should be the end of MVP |Complete
 |August 5| Work on pmvp in this order: Second axios request /  Append data and image / Style in CSS (landing page) / subscription form an pop up window / Google Maps window and link for location.| Incomplete
 |August 6| Presentations | Incomplete
 
@@ -112,25 +112,46 @@ http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Look for API and make it work | H | 4hrs| 2hrs | 2hrs |
-| First data request and append data | H | 3hrs| hrs | hrs |
-| Write basic HTML, CSS | H | 3hrs | hrs | hrs |
-| Create input user's form | H | 3hrs | hrs | hrs |
-| Remove data from previous response | H | 2hrs | hrs | hrs |
-| Create links in between pages | H | 3hrs | hrs | hrs |
-| Style with advance CSS all the pages | H | 15hrs | hrs | hrs |
-| Make new request for new data and img for landing page | H | 3hrs | hrs | hrs |
-| Appen data and image for landing page | H | 4hrs | hrs | hrs |
-| Create new pop up window with link to Google Maps for business or place location | H | 4hrs | hrs | hrs |
-| Total | H | 48hrs| 5hrs | 5hrs |
+| First data request and append data | H | 3hrs| 3hrs | 3hrs |
+| Write basic HTML, CSS | H | 3hrs | 2hrs | 2hrs |
+| Create input user's form | H | 3hrs | 3hrs | 3hrs |
+| Remove data from previous response | H | 2hrs | 3hrs | 3hrs |
+| Append business data info in container | H | 3hrs | 4hrs | 4hrs |
+| Style with advance CSS all the pages | H | 15hrs | 16hrs | 16hrs |
+| Find second API for Maps window | H | 3hrs | 2hrs | 2hrs |
+| Create Maps | H | 3hrs | 4hrs | hrs |
+| Create Modal pop up window for businees info | H | 4hrs | 4hrs | 4hrs |
+| Create Contact form pop up window | H | 3hrs | 4hrs | hrs |
+| Total | H | 48hrs| 46hrs | hrs |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+ 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+<!-- Code for creating a modal pop up window. -->
+
+function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      document.querySelector(".modal-text").innerHTML = `
+           <h1 class="restaurant-name">${business.name}</h1>
+           <h3>${business.categories[0].title}</h3>
+           <h2>${business.price}</h2>
+           <p>${business.location.display_address[0]}</p>
+           <p>${business.location.display_address[1]}</p>
+           <p>${business.location.display_address[2]}</p>
+           <h6>Phone</>
+           <p>${business.phone}</p>
+           <img class="logo-4modal" src="https://i.imgur.com/6mH212q.png"/>
+           `;
+
+      document.querySelector(".modal").style.display = "block";
+    });
 ```
 
 ## Change Log

@@ -65,14 +65,6 @@ function displayYelp(businesses) {
            <img class="logo-4modal" src="https://i.imgur.com/6mH212q.png"/>
            `;
 
-      createMap(
-        `${business.coordinates.latitude}`,
-        `${business.coordinates.longitude}`
-      );
-      console.log(
-        `${business.coordinates.latitude}`,
-        `${business.coordinates.longitude}`
-      );
       document.querySelector(".modal").style.display = "block";
     });
 
