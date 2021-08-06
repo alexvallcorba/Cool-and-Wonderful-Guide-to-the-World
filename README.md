@@ -79,7 +79,7 @@ https://api.yelp.com/v3/businesses/search?location=barcelona&term=tapas
  
 #### PostMVP  
 
-- Make a new request (dif API?)to get more data and img of each individual object.
+- Make a new request to get more data and img of each individual object.
 
 - Append new data and img.
 
