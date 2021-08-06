@@ -83,7 +83,7 @@ https://api.yelp.com/v3/businesses/search?location=barcelona&term=tapas
 
 - Append new data and img.
 
-- Style with advance CSS.
+- Style with advance CSS and Design logo, background img and button.
 
 - create a subscription form and pop up window for  user's name and email.
 
@@ -113,13 +113,12 @@ https://api.yelp.com/v3/businesses/search?location=barcelona&term=tapas
 | Write basic HTML, CSS | H | 3hrs | 2hrs | 2hrs |
 | Create input user's form | H | 3hrs | 3hrs | 3hrs |
 | Remove data from previous response | H | 2hrs | 3hrs | 3hrs |
-| Append business data info in container | H | 3hrs | 4hrs | 4hrs |
-| Style with advance CSS all the pages | H | 15hrs | 16hrs | 16hrs |
+| Append business data info in container | H | 4hrs | 4hrs | 4hrs |
+| Style with advance CSS all the pages | H | 10hrs | 12hrs | 16hrs |
 | Find second API for Maps window | H | 3hrs | 2hrs | 2hrs |
-| Create Maps | H | 3hrs | 4hrs | hrs |
+| Create Maps | H | 4hrs | 5hrs | 5hrs |
 | Create Modal pop up window for businees info | H | 4hrs | 4hrs | 4hrs |
-| Create Contact form pop up window | H | 3hrs | 4hrs | hrs |
-| Total | H | 48hrs| 46hrs | hrs |
+| Total | H | 40hrs| 40hrs | 40hrs |
 
 ## Code Snippet
 
