@@ -107,7 +107,6 @@ h3 {
 }
 
 .display-box :hover {
-  /* transform: scale(1.5);  */
   color: black;
 }
 .city {
@@ -196,33 +195,12 @@ h3 {
   cursor: pointer;
 }
 
-.form-container {
-  text-align: center;
-  padding: 40px;
-  margin-top: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px;
-  position: static;
-}
-
-.form-container1 [type="text"] {
-  width: 25%;
-  padding: 12px 20px;
-  display: block;
-  border: 1px solid rgb(2, 2, 2);
-  border-radius: 10px;
-  box-sizing: border-box;
-  margin: 20px auto;
-}
-
-
 footer {
   text-align: center;
   font-family: "Poiret One", cursive;
   font-size: 20px;
   color: blue;
-  margin-top: 65px;
+  margin-top: 0px;
   margin-bottom: 100px;
 }
 

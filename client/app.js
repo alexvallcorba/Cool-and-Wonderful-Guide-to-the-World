@@ -1,29 +1,26 @@
 const form = document.querySelector("form");
-
+//  addEventListener to the form.
+// Select send values to the API request
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
-  console.log(e.target);
   let { term, location } = e.target;
   let termValue = term.value;
-  console.log(termValue);
   let locationValue = location.value;
-  console.log(locationValue);
   getYelpRequest(termValue, locationValue);
 });
-
+//Get data to log the categories term and location to the console request data from api
 const getYelpRequest = async (term, location) => {
   removeBusinesses();
   let localHostURL = `http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}`;
   let response = await axios.get(localHostURL);
-  console.log(response);
-  console.log(response.data.businesses);
   if (!response) {
     alert("No information available.");
   } else {
     displayYelp(response.data.businesses);
   }
 };
-
+//create loop to get to the values
+//Create an HTML string using interpolation and insert position in html.
 function displayYelp(businesses) {
   businesses.forEach((business) => {
     let bizDiv = document.createElement("div");
@@ -91,7 +88,7 @@ function displayYelp(businesses) {
     };
   });
 }
-
+//Removed previous result from the DOM
 function removeBusinesses() {
   const removeElement = document.querySelector(".biz-data");
   while (removeElement.lastChild) {
