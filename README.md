@@ -97,8 +97,8 @@ https://api.yelp.com/v3/businesses/search?location=barcelona&term=tapas
 |August 2| Project Approval / Pseudo code / Create basicHTML (maybe some basic CSS after axios request) / Start writing code (axios request, append data)| Complete
 |August 3| Append the data / Remove previous search / Maybe start CSS style using flex box and Media Query| Complete
 |August 4| Advance CSS styling / This should be the end of MVP |Complete
-|August 5| Work on pmvp in this order: Second axios request /  Append data and image / Style in CSS (landing page)  / Google Maps window and link for location.| Incomplete
-|August 6| Presentations | complete
+|August 5| Work on pmvp in this order: Second axios request /  Append data and image / Style in CSS (landing page)  / Google Maps window and link for location.| Complete
+|August 6| Presentations | incomplete
 
 ## Priority Matrix
 
