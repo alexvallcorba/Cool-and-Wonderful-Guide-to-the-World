@@ -11,13 +11,8 @@ form.addEventListener("submit", async (e) => {
 //Get data to log the categories term and location to the console request data from api
 const getYelpRequest = async (term, location) => {
   removeBusinesses();
-  let localHostURL = `http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}`;
-  let response = await axios.get(localHostURL);
-  if (!response) {
-    alert("No information available.");
-  } else {
-    displayYelp(response.data.businesses);
-  }
+  let localHostURL = `http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}`;  let response = await axios.get(localHostURL);
+  displayYelp(response.data.businesses);
 };
 //create loop to get to the values
 //Create an HTML string using interpolation and insert position in html.
@@ -52,7 +47,8 @@ function displayYelp(businesses) {
            <p>${business.location.display_address[2]}</p>
            <h6>Phone</>
            <p>${business.phone}</p>
-           <div id="map"></div>
+           <div id="map"></div>ls
+           
            <img class="logo-4modal" src="https://i.imgur.com/6mH212q.png"/>
            `;
 
@@ -75,7 +71,7 @@ function displayYelp(businesses) {
 
       document.querySelector(".modal").style.display = "block";
     });
-
+    
     window.onclick = function (event) {
       if (event.target == document.querySelector(".modal")) {
         document.querySelector(".modal").style.display = "none";
