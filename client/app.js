@@ -11,7 +11,7 @@ form.addEventListener("submit", async (e) => {
 //Get data to log the categories term and location to the console request data from api
 const getYelpRequest = async (term, location) => {
   removeBusinesses();
-  let localHostURL = `http://localhost:3000/yelpTerm/${term}/yelpLocation/${location}`;  let response = await axios.get(localHostURL);
+  let localHostURL = `https://cool-guide.herokuapp.com/yelpTerm/${term}/yelpLocation/${location}`;  let response = await axios.get(localHostURL);
   displayYelp(response.data.businesses);
 };
 //create loop to get to the values
