@@ -11,7 +11,8 @@ form.addEventListener("submit", async (e) => {
 //Get data to log the categories term and location to the console request data from api
 const getYelpRequest = async (term, location) => {
   removeBusinesses();
-  let localHostURL = `https://cool-guide.herokuapp.com/yelpTerm/${term}/yelpLocation/${location}`;  let response = await axios.get(localHostURL);
+  let localHostURL = `https://cool-guide.herokuapp.com/yelpTerm/${term}/yelpLocation/${location}`;
+  let response = await axios.get(localHostURL);
   displayYelp(response.data.businesses);
 };
 //create loop to get to the values
@@ -47,8 +48,7 @@ function displayYelp(businesses) {
            <p>${business.location.display_address[2]}</p>
            <h6>Phone</>
            <p>${business.phone}</p>
-           <div id="map"></div>ls
-           
+           <div id="map"></div>
            <img class="logo-4modal" src="https://i.imgur.com/6mH212q.png"/>
            `;
 
@@ -71,7 +71,7 @@ function displayYelp(businesses) {
 
       document.querySelector(".modal").style.display = "block";
     });
-    
+
     window.onclick = function (event) {
       if (event.target == document.querySelector(".modal")) {
         document.querySelector(".modal").style.display = "none";
