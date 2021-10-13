@@ -4,6 +4,8 @@
 
 Cool & Wonderful Guide 2 The World.
 
+https://cool-and-wonderful-guide-to-the-world.netlify.app/
+
 ## Project Description
 
 World wide digital traveling guide. Users can use it to plan trips or once in the location, can search all types of featuers like shops, museums,  transportation, events. Comes with a full description of the business or the palce and a google map location.
