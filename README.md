@@ -8,7 +8,7 @@ https://cool-and-wonderful-guide-to-the-world.netlify.app/
 
 ## Project Description
 
-World wide digital traveling guide. Users can use it to plan trips or once in the location, can search all types of featuers like shops, museums,  transportation, events. Comes with a full description of the business or the palce and a google map location.
+web application for a travel guide that allows users to search anyshops, airports, hotels, restaurants, tourist locations with their address, map location and price rating all over the world. Utilized: Javascript, CSS, HTML, Yelp API.
 
 ## API and Data Sample
 
